@@ -1,0 +1,39 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{db}/documents {
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    function isAdmin() {
+      return isSignedIn() && request.auth.token.email == "admin@gmail.com";
+    }
+
+    match /skills/{skillId} {
+      allow create: if true;
+
+      allow read, aggregate: if resource.data.status == "approved" || isAdmin();
+
+      allow update, delete: if isAdmin();
+    }
+
+    match /users/{uid} {
+      allow read, aggregate: if isAdmin() || (isSignedIn() && request.auth.uid == uid);
+      allow write:           if isAdmin() || (isSignedIn() && request.auth.uid == uid);
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
+
+service firebase.storage {
+  match /b/{bucket}/o {
+    match /skills/{allPaths=**} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+  }
+}
