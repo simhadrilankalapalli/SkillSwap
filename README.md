@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# 🔁 SkillSwap – Full-Stack Skill Sharing Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+SkillSwap is a responsive full-stack web platform that enables peer-to-peer skill exchange. Users can showcase their skills, browse others' listings, and collaborate through a secure, role-based system. Admins and organizations can monitor submissions, verify profiles, and manage skill metrics through a dedicated dashboard.
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+## 🚀 Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+> [https://skillswap-seven-olive.vercel.app/]
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📸 Screenshots
 
-### `npm test`
+![Home Page]
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/72c7183b-2469-4222-9903-f8a595f04dfc" />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Skill Card]
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b3156660-0007-45c1-a32c-52152b5fa49a" />
 
-### `npm run build`
+![Admin Dashboard]
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/81ec6d3b-451d-4295-a25e-17a0b17bc1ea" />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 💡 Key Features
 
-### `npm run eject`
+- 🔐 **Secure Login & Access Control**: Firebase Authentication with 2-tier role-based access for users and admins.
+- 📋 **Skill Listings**: Users can post, browse, and bookmark skills; all data is stored in Firestore.
+- ✉️ **Automated Admin Emails**: Integrated Email.js to notify admins on new skill submissions, including user data and Cloudinary-hosted images.
+- 📊 **Admin Dashboard**: Real-time monitoring of key metrics — total users, skill submissions, and approval status (approved, pending, rejected).
+- 📱 **Responsive UI**: Built with Tailwind CSS for consistent styling across devices.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🛠️ Tech Stack
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Frontend:
+- React.js
+- Tailwind CSS
+- TypeScript (if applicable)
+- HTML, CSS, JavaScript
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Backend / Services:
+- Firebase Authentication
+- Firebase Firestore
+- Cloudinary (image hosting)
+- Email.js (automated admin notifications)
