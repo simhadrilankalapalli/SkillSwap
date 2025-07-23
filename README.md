@@ -10,13 +10,16 @@ SkillSwap is a responsive full-stack web platform that enables peer-to-peer skil
 
 ## 📸 Screenshots
 
-![Home Page]
+**Home Page**
+
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/72c7183b-2469-4222-9903-f8a595f04dfc" />
 
-![Skill Card]
+**Skill Card**
+
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b3156660-0007-45c1-a32c-52152b5fa49a" />
 
-![Admin Dashboard]
+**Admin Dashboard**
+
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/81ec6d3b-451d-4295-a25e-17a0b17bc1ea" />
 
 
